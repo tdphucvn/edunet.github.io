@@ -1,0 +1,41 @@
+.container-content{
+    min-height: 67.5vh;
+    padding-left: 11%;
+    padding-right: 10%;
+}
+.list-header{
+    background-color: rgb(175, 175, 175);
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+.part{
+    font-size:1.2em;
+    margin-top:10px;
+    line-height: 1.9em;
+    vertical-align: middle;
+    display:flex;
+    align-items: center;
+    border-bottom: solid 0.5px gray;
+}
+.btn-show{
+    position: absolute;
+    right: 11%;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background:#457DFB;
+    color: white;
+    border: none;
+}
+.hidden {
+    max-height: 0; 
+    overflow: hidden; 
+    /* You should prefix the following: */
+    transition: max-height 100ms;
+}
+.hidden.active {
+    /* Depending on this value, your animatiom will seem faster or shorter */
+    max-height: 100%;
+}

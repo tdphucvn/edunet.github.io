@@ -1,0 +1,210 @@
+.image-layout{
+    margin-top: 10%;
+    position: relative;
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-container{
+    /*background-color: lightcoral;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-container a{
+    text-decoration: none;
+    color:black;
+}
+.math-section{
+    margin:20px;
+    border-bottom: 3px outset #1C6EA4;
+    height:150px;
+    width: 158px;
+    text-align: center;
+    opacity:0.8;
+}
+.layout-info{
+    margin-left:0;
+    display:flex;
+}
+
+.layout-title{
+    padding-top: 30px;
+    font-size:1.1em;
+}
+.layout-info-text{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:-70px;
+    text-transform: none;
+    text-align: justify;
+}
+.layout-info-container{
+    width:80%;
+}
+.layout-info-container h2{
+    text-align: center;
+    width:100%;
+}
+.set{
+    background-image: url(index/index-images/rsz_1200px-venn_a_intersect_bsvg.png);
+    background-size: 100px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.equations{
+    background-image: url(index/index-images/Particle-Rest-Mass-Equation.png);
+    background-size:180px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.functions{
+    background-image: url(index/index-images/function.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logarithm{
+    background-image: url(index/index-images/2106598.png);
+    background-size:50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.goniometric{
+    background-image: url(index/index-images/goniometric.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.function_advanced{
+    background-image: url(index/index-images/function_advanced.png);
+    background-size:110px;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.sequence{
+    background-image: url(index/index-images/sequence.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.geometry{
+    background-image: url(index/index-images/geometry.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.stereometry{
+    background-image: url(index/index-images/stereometry.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.analytic-geo{
+    background-image: url(index/index-images/analytic-geometry.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.complex-num{
+    background-image: url(index/index-images/complex-num.png);
+    background-size:60px;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.combinatoric{
+    background-image: url(index/index-images/combinatoric.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.differential{
+    background-image: url(index/index-images/derivation.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.integration{
+    background-image: url(index/index-images/integration.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.statistics{
+    background-image: url(index/index-images/probability.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.math-section:hover{
+    -webkit-box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.75);
+    opacity:1;
+}
+.link-book, .donate-text{
+    border-top: 3px outset #1C6EA4;
+    width: 80%;
+    padding-top:10%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.link-book-image{
+    filter:drop-shadow(2px 7px 5px black);
+}
+.link-book-text, .donate-text-info {
+    text-align: center;
+    font-size: 1.3em;
+    width:60%;
+}
+.link-book-text h2{
+    text-align: center;
+}
+.div-mobile{
+    display: none;
+}
+.donate{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: #2F56B0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10%;
+    border-radius: 4px;
+}
+#donate-info {
+    margin-top:3%;
+    margin-left: 10%;
+    max-height: 0; 
+    overflow: hidden; 
+    /* You should prefix the following: */
+    transition: max-height 100ms;
+}
+#donate-info.active {
+    /* Depending on this value, your animatiom will seem faster or shorter */
+    max-height: 1000px;
+}
+#donate-info img{
+    margin-top:5px;
+    margin-right: 5px;
+}
+.footer-container{
+    margin-top:5%;
+}
+.content-container{
+    margin-bottom:10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

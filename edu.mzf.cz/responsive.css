@@ -1,0 +1,124 @@
+.burger{
+    display:none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin:5px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:600px){
+    html, body{
+        position: relative;
+        overflow-x: hidden;
+    }
+    .layout-info-container
+    {
+        width: 100%;
+    }
+    .main-nav{
+        justify-content: flex-end;
+    }
+    .container-border{
+        font-size:10px;
+        height: 15vh;
+    }
+    .main-nav-item-1{
+        height: 15vh;
+        width: 70%;
+    }
+    .container{
+        display: none;
+        position: absolute;
+        right: 0px;
+        height: 85vh;
+        width: 50%;
+        top:13.4vh;
+        background: linear-gradient(to left, rgb(248, 248, 248),rgba(214, 214, 214, 0.89));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 5;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .container li{
+        opacity: 0;
+
+    }
+    .headline{
+        font-size: 17px;
+        top:68%;
+    }
+    .headline-text{
+        font-size: 13px;
+    }
+    .desktop{
+        display:none;
+    }
+    .div-mobile{
+        margin-bottom:10%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity:0
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+@media screen and (max-width:375px){
+    .main-nav-item-1{
+        font-size: 8px;
+    }
+    .headline-button button{
+        padding: 10px;
+    }
+    .slider-2, .slider-3{
+        height: 15vh;
+    }
+    .list-header h2{
+        font-size: 14px;
+        text-align: center;
+    }
+    .list-header{
+        justify-content: center;
+    }
+    .list-header{
+        padding-left:0;
+    }
+    .list-group{
+        width: 100%;
+        font-size: 12px;
+    }
+    .link-book-text, .donate-text-info{
+        text-align: center;
+        width: 90%;
+        font-size: 17px;
+    }
+
+}
