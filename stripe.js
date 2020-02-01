@@ -14,8 +14,8 @@
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://edunet.netlify.com/',
-        cancelUrl: 'https://edunet.netlify.com/matematika/matematika.html',
+        successUrl: 'https://edunet.netlify.com/donate.html',
+        cancelUrl: 'https://edunet.netlify.com/donate.html',
       })
       .then(function (result) {
         if (result.error) {
@@ -43,8 +43,8 @@
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://your-website.com/success',
-        cancelUrl: 'https://your-website.com/canceled',
+        successUrl: 'https://edunet.netlify.com/donate.html',
+        cancelUrl: 'https://edunet.netlify.com/donate.html',
       })
       .then(function (result) {
         if (result.error) {
@@ -72,8 +72,8 @@
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://your-website.com/success',
-        cancelUrl: 'https://your-website.com/canceled',
+        successUrl: 'https://edunet.netlify.com/donate.html',
+        cancelUrl: 'https://edunet.netlify.com/donate.html',
       })
       .then(function (result) {
         if (result.error) {
