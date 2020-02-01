@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="donate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="scroll-out.js"></script>
+    <script
+     src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <title>Podpora</title>
+</head>
+<body>
+    <header>
+        <div class="container-border">
+        <div class="nav main-nav-item-1">
+        <div class="logo"><img class="main-nav-logo " src="logo-header.png" alt="Logo"></div>
+        <div><a class="nav main-nav-item-2" href="../index.html" ><h2>Edunet | Vzdělání pro každého </h2></a></div>
+        </div>
+        <nav class="main-nav">
+        <ul class="container">
+            <li class="nav main-nav-item-3"><h2><a href="../matematika/matematika.html">Matematika</a></h2></li>
+            <li class="nav main-nav-item-3"><h2><a href="../matematika/matematika.html">Forum</a></h2></li>
+            <li class="nav main-nav-item-4"><h2><a href="../blog/blog.html">Blog</a></h2></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        </nav>
+        <script src="app.js"></script>
+        </div>
+    </header>
+    <div class="slider-4"></div>
+    <main>
+        <!-- Load Stripe.js on your website. -->
+        <script src="https://js.stripe.com/v3"></script>
+        <div class="test">
+        <div class="donate-container">
+        <div class="donation-text"><h2>Podpora</h2>
+            <p>Projekt jsem začal s myšlenkou poskytnout všem středoškolským žákům volně dostupné podklady a studijní materiály k úspěšnému zvládnutí maturity z matematiky (státní, profilová) a i
+                případných přijímacích zkoušek na VŠ. Nesmím však zapomenout, že se jedná také o skvělý zdroj informací i k přípravě na písemku z matematiky, ať už desetiminutovce nebo čtvrtletní práci.</p>
+            <p>I do budoucnosti mám naplánovaných hned několik projektů, které budou dosti náročnější na zrealizování než tato webová stránka. A proto budu velmi vděčný za jakoukoli
+                finanční podporu z vaší strany. Pomůže to mně jako tvůrci tak i vám, jelikož se budu moct více věnovat těmto projektům a hlavně zůstanou i nadále bezplatné.</p>
+            </div>
+                
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <div class="buttons">
+            <div><h2>Způsob platby</h2></div>
+            <div>
+                <button class="btn-choose" onclick="showHide1()">Bankovní převod</button>
+                <button class="btn-choose" onclick="showHide()">Paypal</button>
+            </div>
+        <div id="donation-btn-stripe">
+            <div class="donate-1">
+            <figure>
+                <h3>Chceš mě podpořit částkou 150,- korun?</h3>
+                Budeš označen na zdi přispěvatelů pod označením záchranář. Svým příspěvkem mě podpoříš v tom, co dělám a pomůžeš i ostatním, jelikož tyto projekty zůstanou i nadále
+                bezplatné.
+            <figcaption>
+                <button class="btn" id="checkout-button-sku_Ge3K8chwvxpQHy" role="link">Podpora</button>
+            </figcaption>
+            </figure>
+            </div>
+            <div class="donate-2">
+                <figure>
+                    <h3>Chceš mě podpořit částkou 250,- korun?</h3>
+                    Budeš označen na zdi přispěvatelů pod označením premiant. Svým příspěvkem mě podpoříš v tom, co dělám a pomůžeš i ostatním, jelikož tyto projekty zůstanou i nadále
+                    bezplatné. Navíc, tímto příspěvkem si zajistíš příležitost mě kontaktovat a nechat si pomoc s dvěma příklady.
+                <figcaption>
+                    <button class="btn" id="checkout-button-sku_GePHfmEX9PTg9L" role="link">Velká podpora</button>
+                </figcaption>
+                </figure>
+            </div>
+            <div class="donate-3">
+                <figure>
+                    <h3>Chceš mě podpořit částkou 15,- korun?</h3>
+                    Budeš označen na zdi přispěvatelů pod označením polní vojín. Svým příspěvkem mě podpoříš v tom, co dělám a pomůžeš i ostatním, jelikož tyto projekty zůstanou i nadále
+                    bezplatné.
+                <figcaption>
+                    <button class="btn" id="checkout-button-sku_GecNCDGNdX2SwV" role="link">Chci přispět</button>
+                </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div id="donation-btn-paypal">
+            <figure>
+
+            </figure>
+            <figcaption>
+                <button class="btn" id="checkout-button-sku_Ge3K8chwvxpQHy" role="link">Podpora-2</button>
+            </figcaption>
+            <button class="btn" id="checkout-button-sku_GePHfmEX9PTg9L" role="link">Velká podpora-2</button>
+            <button class="btn" id="checkout-button-sku_GecNCDGNdX2SwV" role="link">Chci přispět-2</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        <script src="stripe.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+        <script src="donation-page-animation.js"></script>
+    </main>
+    <footer>
+        <div class="footer-container-donate">
+            <div class="footer-author-donate">
+                &copy; 2020 Philip Tran | EduNet
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

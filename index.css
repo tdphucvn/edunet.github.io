@@ -180,7 +180,6 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 10%;
     border-radius: 4px;
 }
 #donate-info {
@@ -207,4 +206,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.donate-link{
+    margin-top:4%;
+    display: flex;
+    justify-content:center;
 }

@@ -13,6 +13,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../responsive.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   crossorigin="anonymous"></script>
     <title>Matematika</title>
 </head>
 <body>
@@ -317,10 +321,7 @@
             const btnScrollToTop = document.querySelector('#btnScrollToTop');
             btnScrollToTop.addEventListener('click', ()=>{
             console.log(btnScrollToTop);
-            window.scrollTo({
-                top:0,
-                behavior:"smooth"
-            })
+            $("html, body").animate({scrollTop:0}, "slow")
         });
         }
         scrollUp();

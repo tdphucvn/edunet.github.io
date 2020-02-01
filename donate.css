@@ -1,0 +1,96 @@
+#donation-btn-stripe{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.donation-text{
+    text-align: center;
+}
+.buttons{
+    flex:2;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-4{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(to left, rgb(248, 248, 248),rgba(214, 214, 214, 0.89));
+    z-index: -1;
+}
+.donate-container{
+    display: flex;
+    justify-content: space-around;
+    background: lightslategrey;
+    flex-wrap: wrap;
+    min-height: 78vh;
+    padding:15px;
+    flex:2;
+}
+.donation-text{
+    flex:1;
+    min-width: 256px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size:23px;
+}
+
+.footer-author-donate{
+    background-color: rgba(0, 0, 0, 0.651);
+    color:white;
+    height:50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+.btn-choose{
+    width: 120px;
+    height: 30px;
+    margin: 10px;
+    background-color: #2F56B0;
+    color: white;
+    border:none;
+    border-radius: 4px;
+}
+#donation-btn-paypal{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    display: none;
+}
+main{
+    color:white;
+}
+.donate-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+    margin: 5px;
+}
+.donate-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    margin: 5px;
+}
+.donate-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    margin: 5px;
+}
+figure{
+    text-align: center;
+    min-width: 130px;
+}
