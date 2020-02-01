@@ -37,7 +37,10 @@
     min-width: 256px;
     padding-left: 25px;
     padding-right: 25px;
-    font-size:23px;
+    font-size:22px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .footer-author-donate{
@@ -93,4 +96,7 @@ main{
 figure{
     text-align: center;
     min-width: 130px;
+}
+.btn{
+    margin-top: 20px;
 }
