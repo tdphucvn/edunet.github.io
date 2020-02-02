@@ -14,8 +14,8 @@
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://edunet.netlify.com/donate.html',
-        cancelUrl: 'https://edunet.netlify.com/donate.html',
+        successUrl: 'https://edu4u.eu/donate.html',
+        cancelUrl: 'https://edu4u.eu/donate.html',
       })
       .then(function (result) {
         if (result.error) {
@@ -43,8 +43,8 @@
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://edunet.netlify.com/donate.html',
-        cancelUrl: 'https://edunet.netlify.com/donate.html',
+        successUrl: 'https://edu4u.eu/donate.html',
+        cancelUrl: 'https://edu4u.eu/donate.html',
       })
       .then(function (result) {
         if (result.error) {
@@ -72,8 +72,8 @@
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://edunet.netlify.com/donate.html',
-        cancelUrl: 'https://edunet.netlify.com/donate.html',
+        successUrl: 'https://edu4u.eu/donate.html',
+        cancelUrl: 'https://edu4u.eu/donate.html',
       })
       .then(function (result) {
         if (result.error) {

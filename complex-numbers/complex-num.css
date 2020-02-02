@@ -1,7 +1,5 @@
 .container-content{
     min-height: 67.5vh;
-    padding-left: 11%;
-    padding-right: 10%;
 }
 .list-header{
     background-color: rgb(175, 175, 175);
@@ -9,13 +7,14 @@
     line-height: 50px;
     vertical-align: middle;
     margin-bottom: 30px;
+    padding-left:20px;
 }
 .part{
+    display: flex;
     font-size:1.2em;
     margin-top:10px;
     line-height: 1.9em;
-    vertical-align: middle;
-    display:flex;
+    padding-left:20px;
     align-items: center;
     border-bottom: solid 0.5px gray;
 }
@@ -38,4 +37,54 @@
 .hidden.active {
     /* Depending on this value, your animatiom will seem faster or shorter */
     max-height: 100%;
+}
+.slider-5{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 13vh;
+    width:100%;
+    background: linear-gradient(to left, rgb(248, 248, 248),rgba(214, 214, 214, 0.89));
+    z-index: -1;
+}
+.list-group{
+    width: 80%;
+}
+.list-container{
+    display: flex;
+    justify-content: center;
+}
+.burger-2 div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin:5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.burger-container{
+    margin-right:5%;
+    display: flex;
+    justify-content:flex-end;
+}
+.title{
+    flex:1;
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity:0
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.content-problem{
+    padding-left:20px;
+    padding-right: 20px;
+}
+.burger-container:hover{
+    -webkit-box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.75);
 }

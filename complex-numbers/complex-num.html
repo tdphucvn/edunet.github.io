@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="complex-num.css">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <script src="../index/index.js"></script>
     <script src="complex-num.js"></script>
@@ -17,205 +18,422 @@
 </head>
 <body>
     <header>
-        <div class="main-nav">
         <div class="container-border">
-        <div class="container">
-            <div class="nav main-nav-item-1"><a href="../index.html"><img class="main-nav-logo" src="../logo-header.png" alt="Logo"></a></div>
-            <div class="nav main-nav-item-2"><a href="../index.html"><h2>Edunet | Vzdělání pro každého </h2></a></div>
-            <div class="nav main-nav-item-3"><h2><a href="../matematika/matematika.html">Matematika</a></h1></div>
-            <div class="nav main-nav-item-4"><h2><a href="../blog/blog.html">Blog</a></h2></div>
+        <div class="nav main-nav-item-1">
+        <div class="logo"><img class="main-nav-logo " src="../logo-header.png" alt="Logo"></div>
+        <div><a class="nav main-nav-item-2" href="../index.html" ><h2>Edunet | Vzdělání pro každého </h2></a></div>
         </div>
+        <nav class="main-nav">
+        <ul class="container">
+            <li class="nav main-nav-item-3"><h3><a href="../matematika/matematika.html">Matematika</a></h3></li>
+            <li class="nav main-nav-item-3"><h3><a href="../matematika/matematika.html">Forum</a></h3></li>
+            <li class="nav main-nav-item-4"><h3><a href="../donate.html">Darovat</a></h3></li>
+            <li class="nav main-nav-item-4"><h3><a href="../blog/blog.html">Blog</a></h3></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-        </div>
+        </nav>
+        <script src="../app.js"></script>
+    </div>
     </header>
+    <div class="slider-5"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="complex-animation.js"></script>
+
+
     <div class="container-content">
-        <div class="container-differential">
-            <div class="list-container">
-                <div class="list-group">
-                    <div class="list-header">
-                        <h2>Komplexní čísla</h2>
+    <div class="container-differential">
+        <div class="list-container">
+            <div class="list-group">
+                <div class="list-header">
+                    <h2>Komplexní čísla</h2>
+                </div>
+                <div class="part"><div class="title">Algebraický tvar komplexního čísla (str. 134)</div>
+                <div onclick="showHide(1)" class="burger-container">
+                    <div class="burger-2 burger_1">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </div>
-                    <div class="part">Algebraický tvar komplexního čísla (str.134)<button onclick="showHide(1)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div  id="content-part-1" class="hidden">
-                        <div class="solution-container">
-                            <div class="content-problem">
-                                <h3><a onclick="problemShow(1)" style="cursor: pointer" class="problem-show">134.1 Vypočítej</a></h3>
-                                <div id="content-problem-part-1" class="hidden">
-                                <img src="complex-image/134.1.jpg" alt="" width=100%>
-                                <button onclick="solutionShow(1)" class="btn">Řešení</button>
-                                <div id="content-solution-1" class="hidden">
-                                    <h4>134.1 - Řešení</h4>
-                                    <img src="complex-image/134.1-solution.jpg" alt="" width="100%">
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                </div>
+                <div  id="content-part-1" class="hidden">
+                    <div class="solution-container">
                         <div class="content-problem">
-                            <h3><a onclick="problemShow(2)" style="cursor: pointer" class="problem-show">134.2 Vypočítej</a></h3>
-                            <div id="content-problem-part-2" class="hidden">
-                            <img src="complex-image/134.2.jpg" alt="" width=100%>
-                            <button onclick="solutionShow(2)" class="btn">Řešení</button>
-                            <div id="content-solution-2" class="hidden">
-                                <h4>134.2 - Řešení</h4>
-                                <img src="complex-image/134.2-solution.jpg" alt="" width=100%>
+                            <h3><a onclick="problemShow(1)" style="cursor: pointer" class="problem-show">134.1 Vypočítej</a></h3>
+                            <div id="content-problem-part-1" class="hidden">
+                            <img src="complex-image/134.1.jpg" alt="" width=100%>
+                            <button onclick="solutionShow(1)" class="btn">Řešení</button>
+                            <div id="content-solution-1" class="hidden">
+                                <h4>134.1 - Řešení</h4>
+                                <img src="complex-image/134.1-solution.jpg" alt="" width="100%">
                             </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(2)" style="cursor: pointer" class="problem-show">134.2 Vypočítej</a></h3>
+                        <div id="content-problem-part-2" class="hidden">
+                        <img src="complex-image/134.2.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(2)" class="btn">Řešení</button>
+                        <div id="content-solution-2" class="hidden">
+                            <h4>134.2 - Řešení</h4>
+                            <img src="complex-image/134.2-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(3)" style="cursor: pointer" class="problem-show">134.3 Vypočítej</a></h3>
+                        <div id="content-problem-part-3" class="hidden">
+                        <img src="complex-image/134.3.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(3)" class="btn">Řešení</button>
+                        <div id="content-solution-3" class="hidden">
+                            <h4>134.3 - Řešení</h4>
+                            <img src="complex-image/134.3-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(4)" style="cursor: pointer" class="problem-show">134.4 Vypočítej</a></h3>
+                        <div id="content-problem-part-4" class="hidden">
+                        <img src="complex-image/134.4.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(4)" class="btn">Řešení</button>
+                        <div id="content-solution-4" class="hidden">
+                            <h4>134.4 - Řešení</h4>
+                            <img src="complex-image/134.4-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(5)" style="cursor: pointer" class="problem-show">134.5 Vypočítej</a></h3>
+                        <div id="content-problem-part-5" class="hidden">
+                        <img src="complex-image/134.5.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(5)" class="btn">Řešení</button>
+                        <div id="content-solution-5" class="hidden">
+                            <h4>134.5 - Řešení</h4>
+                            <img src="complex-image/134.5-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(6)" style="cursor: pointer" class="problem-show">134.6 Vypočítej</a></h3>
+                        <div id="content-problem-part-6" class="hidden">
+                        <img src="complex-image/134.6.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(6)" class="btn">Řešení</button>
+                        <div id="content-solution-6" class="hidden">
+                            <h4>134.6 - Řešení</h4>
+                            <img src="complex-image/134.6-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(7)" style="cursor: pointer" class="problem-show">134.7 Vypočítej</a></h3>
+                        <div id="content-problem-part-7" class="hidden">
+                        <img src="complex-image/134.7.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(7)" class="btn">Řešení</button>
+                        <div id="content-solution-7" class="hidden">
+                            <h4>134.7 - Řešení</h4>
+                            <img src="complex-image/134.7-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(8)" style="cursor: pointer" class="problem-show">134.8 Vypočítej</a></h3>
+                        <div id="content-problem-part-8" class="hidden">
+                        <img src="complex-image/134.8.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(8)" class="btn">Řešení</button>
+                        <div id="content-solution-8" class="hidden">
+                            <h4>134.8 - Řešení</h4>
+                            <img src="complex-image/134.8-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(9)" style="cursor: pointer" class="problem-show">134.9 Vypočítej</a></h3>
+                        <div id="content-problem-part-9" class="hidden">
+                        <img src="derivation-image/153.9.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(9)" class="btn">Řešení</button>
+                        <div id="content-solution-9" class="hidden">
+                            <h4>134.9 - Řešení</h4>
+                            <img src="derivation-image/153.9-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(10)" style="cursor: pointer" class="problem-show">134.10 Vypočítej</a></h3>
+                        <div id="content-problem-part-10" class="hidden">
+                        <img src="derivation-image/154.10.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(10)" class="btn">Řešení</button>
+                        <div id="content-solution-10" class="hidden">
+                            <h4>134.10 - Řešení</h4>
+                            <img src="derivation-image/154.10-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="part"><div class="title">Limita funkce v nevlastním bodě (str. 154)</div>
+                    <div onclick="showHide(2)" class="burger-container">
+                        <div class="burger-2 burger_2">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-part-2" class="hidden">
+                    <div class="solution-container">
                         <div class="content-problem">
-                            <h3><a onclick="problemShow(3)" style="cursor: pointer" class="problem-show">134.3 Vypočítej</a></h3>
-                            <div id="content-problem-part-3" class="hidden">
-                            <img src="complex-image/134.3.jpg" alt="" width=100%>
-                            <button onclick="solutionShow(3)" class="btn">Řešení</button>
-                            <div id="content-solution-3" class="hidden">
-                                <h4>134.3 - Řešení</h4>
-                                <img src="complex-image/134.3-solution.jpg" alt="" width=100%>
+                            <h3><a onclick="problemShow(11)" style="cursor: pointer" class="problem-show">154.11 Vypočítej</a></h3>
+                            <div id="content-problem-part-11" class="hidden">
+                            <img src="derivation-image/154.11.jpg" alt="" width=100%>
+                            <button onclick="solutionShow(11)" class="btn">Řešení</button>
+                            <div id="content-solution-11" class="hidden">
+                                <h4>154.11 - Řešení</h4>
+                                <img src="derivation-image/154.11-solution.jpg" alt="" width="100%">
                             </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(12)" style="cursor: pointer" class="problem-show">154.12 Vypočítej</a></h3>
+                        <div id="content-problem-part-12" class="hidden">
+                        <img src="derivation-image/154.12.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(12)" class="btn">Řešení</button>
+                        <div id="content-solution-12" class="hidden">
+                            <h4>154.12 - Řešení</h4>
+                            <img src="derivation-image/154.12-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(13)" style="cursor: pointer" class="problem-show">154.13 Vypočítej</a></h3>
+                        <div id="content-problem-part-13" class="hidden">
+                        <img src="derivation-image/154.13.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(13)" class="btn">Řešení</button>
+                        <div id="content-solution-13" class="hidden">
+                            <h4>154.13 - Řešení</h4>
+                            <img src="derivation-image/154.13-solution.jpg" alt="" width=100%>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="part"><div class="title">Jednostranné limity (str. 154-155)</div>
+                    <div onclick="showHide(3)" class="burger-container">
+                        <div class="burger-2 burger_3">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-part-3" class="hidden">
+                    <div class="solution-container">
                         <div class="content-problem">
-                            <h3><a onclick="problemShow(4)" style="cursor: pointer" class="problem-show">134.4 Vypočítej</a></h3>
-                            <div id="content-problem-part-4" class="hidden">
-                            <img src="complex-image/134.4.jpg" alt="" width=100%>
-                            <button onclick="solutionShow(4)" class="btn">Řešení</button>
-                            <div id="content-solution-4" class="hidden">
-                                <h4>134.4 - Řešení</h4>
-                                <img src="complex-image/134.4-solution.jpg" alt="" width=100%>
-                            </div>
+                            <h3><a onclick="problemShow(14)" style="cursor: pointer" class="problem-show">154.14 Vypočítej</a></h3>
+                            <div id="content-problem-part-14" class="hidden">
+                            <img src="derivation-image/154.14.jpg" alt="" width=100%>
                             </div>
                         </div>
-                        <div class="content-problem">
-                            <h3><a onclick="problemShow(5)" style="cursor: pointer" class="problem-show">134.5 Vypočítej</a></h3>
-                            <div id="content-problem-part-5" class="hidden">
-                            <img src="complex-image/134.5.jpg" alt="" width=100%>
-                            <button onclick="solutionShow(5)" class="btn">Řešení</button>
-                            <div id="content-solution-5" class="hidden">
-                                <h4>134.5 - Řešení</h4>
-                                <img src="complex-image/134.5-solution.jpg" alt="" width=100%>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="content-problem">
-                            <h3><a onclick="problemShow(6)" style="cursor: pointer" class="problem-show">134.6 Vypočítej</a></h3>
-                            <div id="content-problem-part-6" class="hidden">
-                            <img src="complex-image/134.6.jpg" alt="" width=100%>
-                            <button onclick="solutionShow(6)" class="btn">Řešení</button>
-                            <div id="content-solution-6" class="hidden">
-                                <h4>134.6 - Řešení</h4>
-                                <img src="complex-image/134.6-solution.jpg" alt="" width=100%>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="content-problem">
-                            <h3><a onclick="problemShow(7)" style="cursor: pointer" class="problem-show">134.7 Vypočítej</a></h3>
-                            <div id="content-problem-part-7" class="hidden">
-                            <img src="complex-image/134.7.jpg" alt="" width=100%>
-                            <button onclick="solutionShow(7)" class="btn">Řešení</button>
-                            <div id="content-solution-7" class="hidden">
-                                <h4>134.7 - Řešení</h4>
-                                <img src="complex-image/134.7-solution.jpg" alt="" width=100%>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="content-problem">
-                            <h3><a onclick="problemShow(8)" style="cursor: pointer" class="problem-show">134.8 Vypočítej</a></h3>
-                            <div id="content-problem-part-8" class="hidden">
-                            <img src="complex-image/134.8.jpg" alt="" width=100%>
-                            <button onclick="solutionShow(8)" class="btn">Řešení</button>
-                            <div id="content-solution-8" class="hidden">
-                                <h4>134.8 - Řešení</h4>
-                                <img src="complex-image/134.8-solution.jpg" alt="" width=100%>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="content-problem">
-                            <h3><a onclick="problemShow(9)" style="cursor: pointer" class="problem-show">153.9 Vypočítej</a></h3>
-                            <div id="content-problem-part-9" class="hidden">
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(15)" style="cursor: pointer" class="problem-show">154.15 Vypočítej</a></h3>
+                        <div id="content-problem-part-15" class="hidden">
+                        <img src="derivation-image/155.15.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(15)" class="btn">Řešení</button>
+                        <div id="content-solution-15" class="hidden">
+                            <h4>154.15 - Řešení</h4>
                             <img src="" alt="" width=100%>
-                            <button onclick="solutionShow()" class="btn">Řešení</button>
-                            <div id="content-solution-" class="hidden">
-                                <img src="" alt="" width=100%>
-                            </div>
-                            </div>
                         </div>
-                        <div class="content-problem">
-                            <h3><a onclick="problemShow(10)" style="cursor: pointer" class="problem-show">154.10 Vypočítej</a></h3>
-                            <div id="content-problem-part-10" class="hidden">
+                        </div>
+                    </div>
+                    <div class="content-problem">
+                        <h3><a onclick="problemShow(16)" style="cursor: pointer" class="problem-show">154.16 Vypočítej</a></h3>
+                        <div id="content-problem-part-16" class="hidden">
+                        <img src="derivation-image/155.16.jpg" alt="" width=100%>
+                        <button onclick="solutionShow(16)" class="btn">Řešení</button>
+                        <div id="content-solution-16" class="hidden">
+                            <h4>154.16 - Řešení</h4>
                             <img src="" alt="" width=100%>
-                            <button onclick="solutionShow()" class="btn">Řešení</button>
-                            <div id="content-solution-" class="hidden">
-                                <img src="" alt="" width=100%>
-                            </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
-                    <div class="part">Limita funkce v nevlastním bodě<button onclick="showHide(2)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-2" class="hidden">
-                        klajskfj
+                </div>
+                <div class="part"><div class="title">Definice derivace funkce</div>
+                    <div onclick="showHide(4)" class="burger-container">
+                        <div class="burger-2 burger_4">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Jednostranné limity<button onclick="showHide(3)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-3" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-4" class="hidden">
+                    sadasd
+                </div>
+                <div class="part"><div class="title">Pravidla pro výpočet derivace</div>
+                    <div onclick="showHide(5)" class="burger-container">
+                        <div class="burger-2 burger_5">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Definice derivace funkce<button onclick="showHide(4)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-4" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-5" class="hidden">
+                    klajskfj
+                </div>
+                <div class="part"><div class="title">Tečna ke grafu funkce</div>
+                    <div onclick="showHide(6)" class="burger-container">
+                        <div class="burger-2  burger_6">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Pravidla pro výpočet derivace<button onclick="showHide(5)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-5" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-6" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(7)" class="part"><div class="title">Funkce rostoucí, klesající</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_7">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Tečna ke grafu funkce<button onclick="showHide(6)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-6" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-7" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(8)" class="part"><div class="title">Druhá derivace funkce</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_8">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Funkce rostoucí, klesající<button onclick="showHide(7)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-7" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-8" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(9)" class="part"><div class="title">Maximum, minimum funkce</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_9">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Druhá derivace funkce<button onclick="showHide(8)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-8" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-9" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(10)" class="part"><div class="title">Průběh funkce</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_10">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Maximum, minimum funkce<button onclick="showHide(9)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-9" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-10" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(11)" class="part"><div class="title">Derivace implicitní funkce</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_11">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Průběh funkce<button onclick="showHide(10)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-10" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-11" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(12)" class="part"><div class="title">Derivace funkce a výpočet limity</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_12">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Derivace implicitní funkce<button onclick="showHide(11)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-11" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-12" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(13)" class="part"><div class="title">Slovní úlohy řešené pomocí derivací</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_13">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Derivace funkce a výpočet limity<button onclick="showHide(12)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-12" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-13" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(14)" class="part"><div class="title">Primitivní funkce</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_14">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Slovní úlohy řešené pomocí derivací<button onclick="showHide(13)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-13" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-14" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(15)" class="part"><div class="title">Určitý integrál</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_15">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Primitivní funkce<button onclick="showHide(14)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-14" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-15" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(16)" class="part"><div class="title">Obsah rovinného obrazce</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_16">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Určitý integrál<button onclick="showHide(15)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-15" class="hidden">
-                        klajskfj
+                </div>
+                <div id="content-part-16" class="hidden">
+                    klajskfj
+                </div>
+                <div onclick="showHide(17)" class="part"><div class="title">Objem rotačního tělesa</div>
+                    <div class="burger-container">
+                        <div class="burger-2 burger_17">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-                    <div class="part">Obsah rovinného obrazce<button onclick="showHide(16)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-16" class="hidden">
-                        klajskfj
-                    </div>
-                    <div class="part">Objem rotačního tělesa<button onclick="showHide(17)" class="btn-show" style="cursor: pointer;"> &#8595</button></div>
-                    <div id="content-part-17" class="hidden">
-                        klajskfj
-                    </div>
+                </div>
+                <div id="content-part-17" class="hidden">
+                    klajskfj
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="footer-author">
@@ -223,5 +441,24 @@
             </div>
         </div>
     </footer>
+    <script src="differential-animation.js"></script>
+    <script src="../burger/burger_1.js"></script>
+    <script src="../burger/burger_2.js"></script>
+    <script src="../burger/burger_3.js"></script>
+    <script src="../burger/burger_4.js"></script>
+    <script src="../burger/burger_5.js"></script>
+    <script src="../burger/burger_6.js"></script>
+    <script src="../burger/burger_7.js"></script>
+    <script src="../burger/burger_8.js"></script>
+    <script src="../burger/burger_9.js"></script>
+    <script src="../burger/burger_10.js"></script>
+    <script src="../burger/burger_11.js"></script>
+    <script src="../burger/burger_12.js"></script>
+    <script src="../burger/burger_13.js"></script>
+    <script src="../burger/burger_14.js"></script>
+    <script src="../burger/burger_15.js"></script>
+    <script src="../burger/burger_16.js"></script>
+    <script src="../burger/burger_17.js"></script>
+
 </body>
 </html>

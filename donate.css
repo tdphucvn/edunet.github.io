@@ -26,7 +26,9 @@
 .donate-container{
     display: flex;
     justify-content: space-around;
-    background: lightslategrey;
+    background-image: url("index/index-images/network-1019737_1920-zmenšený.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     flex-wrap: wrap;
     min-height: 78vh;
     padding:15px;
@@ -67,31 +69,34 @@
     display: none;
 }
 main{
-    color:white;
+    /*color: white;*/
 }
 .donate-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightseagreen;
     margin: 5px;
+    background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
+    border: 2px solid black;
 }
 .donate-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightpink;
     margin: 5px;
+    background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
+    border: 2px solid black;
 }
 .donate-3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightskyblue;
     margin: 5px;
+    background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
+    border: 2px solid black;
 }
 figure{
     text-align: center;
