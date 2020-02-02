@@ -1,10 +1,38 @@
-const hero = document.querySelector('.hero');
 const slider = document.querySelector('.slider-3');
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.main-nav');
 const logo = document.querySelector('.main-nav-item-1');
+const set = document.querySelector('#set')
+const equation = document.querySelector('#equation')
+const functions = document.querySelector('#function')
+const logarithm = document.querySelector('#logarithm')
+const goniometry = document.querySelector('#goniometry')
+const functionAdvanced = document.querySelector('#function-advanced')
+const sequence = document.querySelector('#sequence')
+const geometry = document.querySelector('#geometry')
+const stereometry = document.querySelector('#stereometry')
+const analytic = document.querySelector('#analytic')
+const complex = document.querySelector('#complex')
+const combinatoric = document.querySelector('#combinatoric')
+const derivation = document.querySelector('#derivation')
+const integration = document.querySelector('#integration')
+const probability = document.querySelector('#probability')
 
 const tl=new TimelineLite();
 
 tl.fromTo(slider, 1.2, {x: "-100%"}, {x:"0%", ease: Power2.easeInOut})
 .fromTo(logo, 0.5, {opacity:0, x:150}, {opacity:1, x:0}, "-=1.2")
+.fromTo(set, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.7")
+.fromTo(equation, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(functions, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(logarithm, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(goniometry, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(functionAdvanced, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(sequence, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(geometry, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(stereometry, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(analytic, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(complex, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(combinatoric, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(derivation, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(integration, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+.fromTo(probability, 1.2, {x: "120%"}, {x:"0%", ease: Power2.easeInOut},"-=0.9")
+
