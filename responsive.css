@@ -101,9 +101,10 @@
     .slider-2, .slider-3{
         height: 15vh;
     }
-    .list-header h2{
+    .list-header{
         font-size: 14px;
         text-align: center;
+        line-height: 75px;
     }
     .list-header{
         justify-content: center;
@@ -112,8 +113,10 @@
         padding-left:0;
     }
     .list-group{
-        width: 100%;
         font-size: 12px;
+    }
+    .list-container{
+        width: 95%;
     }
     .link-book-text, .donate-text-info{
         text-align: center;
