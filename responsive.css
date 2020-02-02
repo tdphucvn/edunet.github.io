@@ -120,5 +120,16 @@
         width: 90%;
         font-size: 17px;
     }
-
+    .section-container{
+        font-size: 9px;
+    }
+    .math-container{
+        width: 98%;
+    }
+    .title-matematika img{
+        width: 30px;
+    }
+    .section{
+        column-gap: 10px;
+    }
 }
