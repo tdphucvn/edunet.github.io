@@ -67,10 +67,11 @@
         <div class="buttons">
             <div><h2>Způsob platby</h2></div>
             <div>
-                <button class="btn-choose" onclick="showHide1()">Bankovní převod</button>
-                <button class="btn-choose" onclick="showHide()">Paypal</button>
+                <button id="bank" class="btn-choose active" onclick="displayPayment(bank)">Bankovní převod</button>
+                <button id="paypal" class="btn-choose" onclick="displayPayment(paypal)">Paypal</button>
             </div>
-        <div id="donation-btn-stripe">
+
+        <div id="stripeText" class="payment">
             <div class="donate-1">
                 <figure>
                     <h3>Chceš mě podpořit částkou 50,- korun?</h3>
@@ -102,19 +103,62 @@
                 </figure>
             </div>
         </div>
-        <div id="donation-btn-paypal">
+        <div id="paypalText" class="payment hidePayment">
+            <div class="donate-1">
+                <figure>
+                    <h3>Chceš mě podpořit částkou 50,- korun?</h3>
+                        Domyslet text, vybrat ikonu, zeď dárců a titul, který získají v případě, že přispějou určitou peněžní částku. Udělat paypal checkout, nebo payment gateway
+                        prostřednictvím statické webové stránky.
+                <figcaption>
+                    <button class="btn" id="checkout-button-sku_GecNCDGNdX2SwV" role="link">Chci přispět</button>
+                </figcaption>
+                </figure>
+            </div>
+            <div class="donate-2">
             <figure>
-
-            </figure>
+                <h3>Chceš mě podpořit částkou 150,- korun?</h3>
+                Domyslet text, vybrat ikonu, zeď dárců a titul, který získají v případě, že přispějou určitou peněžní částku. Udělat paypal checkout, nebo payment gateway
+                prostřednictvím statické webové stránky.
             <figcaption>
-            <button class="btn" id="checkout-button-sku_Ge3K8chwvxpQHy" role="link">Chci přispět</button>
+                <button class="btn" id="checkout-button-sku_Ge3K8chwvxpQHy" role="link">Chci přispět</button>
             </figcaption>
-            <button class="btn" id="checkout-button-sku_GePHfmEX9PTg9L" role="link">Chci přispět</button>
-            <button class="btn" id="checkout-button-sku_GecNCDGNdX2SwV" role="link">Chci přispět</button>
+            </figure>
+            </div>
+            <div class="donate-3">
+                <figure>
+                    <h3>Chceš mě podpořit částkou 250,- korun?</h3>
+                    Domyslet text, vybrat ikonu, zeď dárců a titul, který získají v případě, že přispějou určitou peněžní částku. Udělat paypal checkout, nebo payment gateway
+                    prostřednictvím statické webové stránky.
+                <figcaption>
+                    <button class="btn" id="checkout-button-sku_GePHfmEX9PTg9L" role="link">Chci přispět</button>
+                </figcaption>
+                </figure>
+            </div>
         </div>
         </div>
         </div>
         </div>
+        <script>
+            const bank = document.querySelector('#bank');
+            const paypal = document.querySelector('#paypal');
+            const bankText = document.querySelector('#stripeText');
+            const paypalText = document.querySelector('#paypalText');
+
+            function displayPayment(option){
+                if(option.className == 'btn-choose'){
+                    option.classList.toggle('active')
+                    if(option == bank){
+                        paypal.className = ('btn-choose');
+                        paypalText.className = ('hidePayment')
+                        bankText.className = ('payment')
+                    }else{
+                        bank.className = ('btn-choose');
+                        bankText.className = ('hidePayment')
+                        paypalText.className = ('payment')
+                    }
+                }
+            }
+        </script>
         <script src="stripe.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>

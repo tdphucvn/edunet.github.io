@@ -1,4 +1,4 @@
-#donation-btn-stripe{
+.payment{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -26,9 +26,10 @@
 .donate-container{
     display: flex;
     justify-content: space-around;
-    background-image: url("index/index-images/network-1019737_1920-zmenšený.jpg");
+    /*background-image: url("index/index-images/network-1019737_1920-zmenšený.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background: white;
     flex-wrap: wrap;
     min-height: 78vh;
     padding:15px;
@@ -62,14 +63,9 @@
     border:none;
     border-radius: 4px;
 }
-#donation-btn-paypal{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+
+.hidePayment{
     display: none;
-}
-main{
-    /*color: white;*/
 }
 .donate-1{
     display: flex;
@@ -77,17 +73,25 @@ main{
     justify-content: center;
     align-items: center;
     margin: 5px;
-    background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
-    border: 2px solid black;
-}
+    /*background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
+    border: 2px solid black;*/
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+
+}*
 .donate-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5px;
-    background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
-    border: 2px solid black;
+    /*background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
+    border: 2px solid black;*/
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+
 }
 .donate-3{
     display: flex;
@@ -95,8 +99,12 @@ main{
     justify-content: center;
     align-items: center;
     margin: 5px;
-    background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
-    border: 2px solid black;
+   /* background: linear-gradient(to left, rgb(248, 248, 248, 0.85),rgba(214, 214, 214, 0.85));
+    border: 2px solid black;*/
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+
 }
 figure{
     text-align: center;
@@ -104,4 +112,9 @@ figure{
 }
 .btn{
     margin-top: 20px;
+}
+.active{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(103, 27, 138);
 }
