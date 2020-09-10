@@ -10,10 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <script src="../index/index.js"></script>
     <script src="complex-num.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+
     <title>Komplexní čísla</title>
 </head>
 <body>
@@ -43,6 +46,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <script src="complex-animation.js"></script>
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
 
     <div class="list-header">
         <h2>Diferenciální počet</h2>
@@ -488,6 +494,16 @@
     <script src="../burger/burger_15.js"></script>
     <script src="../burger/burger_16.js"></script>
     <script src="../burger/burger_17.js"></script>
+    <script>
+        const scrollUp = () =>{
+            const btnScrollToTop = document.querySelector('#btnScrollToTop');
+            btnScrollToTop.addEventListener('click', ()=>{
+            console.log(btnScrollToTop);
+            $("html, body").animate({scrollTop:0})
+        });
+        }
+        scrollUp();
+    </script>
 
 </body>
 </html>
